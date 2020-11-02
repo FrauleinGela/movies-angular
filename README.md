@@ -6,6 +6,11 @@ This project works along with an API
 
 This project depends on the following API:  https://github.com/FrauleinGela/movies-api-csharp
 
+## TODO
+ * Check a movie if its booked
+ * Check a movie if its booked by a user
+ * Add login = > If login succeeds then store the token in the local storage, a token that is returned from the Api created with a JwtSecurityToken)
+ 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
