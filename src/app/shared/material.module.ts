@@ -15,17 +15,6 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 
 @NgModule({
-  imports: [
-    MatFormFieldModule,
-    MatButtonModule,
-    MatMenuModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatListModule,
-    MatSelectModule,
-    MatInputModule,
-    MatProgressBarModule
-  ],
   exports: [
     MatFormFieldModule,
     MatButtonModule,
