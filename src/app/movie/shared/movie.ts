@@ -16,3 +16,9 @@ export interface IMovie {
   imdbRating: string;
   imdbID: string;
 }
+
+export interface IMovieListParameters {
+  title: string;
+  country: string;
+  language: string;
+}
