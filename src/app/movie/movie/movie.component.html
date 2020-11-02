@@ -1,0 +1,44 @@
+<div *ngIf="movie$ | async as movie" class="item-content px-2 pt-2">
+  <h2 matLine> {{movie.title}} </h2>
+  <img matListAvatar [src]="movie.poster" alt="movie.title">
+  <div class="mat-h3">
+    <span> Imdb rating: </span>
+    <span class="demo-2"> : {{movie.imdbRating}} </span>
+  </div>
+  <div matLine>
+    <span> Year </span>
+    <span class="demo-2"> : {{movie.year}} </span>
+  </div>
+  <div>
+    <span> Released: </span>
+    <span class="demo-2"> : {{movie.released}} </span>
+  </div>
+  <div>
+    <span> Genre: </span>
+    <span class="demo-2"> : {{movie.genre}} </span>
+  </div>
+  <div>
+    <span> Language: </span>
+    <span class="demo-2"> : {{movie.language}} </span>
+  </div>
+  <div>
+    <span> Country: </span>
+    <span class="demo-2"> : {{movie.country}} </span>
+  </div>
+  <div>
+    <span> Plot: </span>
+    <span class="demo-2"> : {{movie.plot}} </span>
+  </div>
+  <div>
+    <span> Director: </span>
+    <span class="demo-2"> : {{movie.director}} </span>
+  </div>
+  <div>
+    <span> Writer: </span>
+    <span class="demo-2"> : {{movie.writer}} </span>
+  </div>
+  <div>
+    <span> Awards: </span>
+    <span class="demo-2"> : {{movie.awards}} </span>
+  </div>
+</div>

@@ -1,5 +1,5 @@
 <h2>Movies</h2>
-<div class="list-bar">
+<div class="list-bar px-2">
   <mat-form-field class="pr-1">
     <input matInput placeholder="Movie title" [formControl]="formGroup.controls.title">
   </mat-form-field>
@@ -22,8 +22,9 @@
 <mat-divider></mat-divider>
 <mat-list>
   <mat-list-item *ngFor="let movie of movies$ | async">
-    <img matListAvatar [src]="movie.poster" alt="movie.title">
-    <h3 matLine> {{movie.title}} </h3>
+    <a matLine router-link [href]="'movies/'+ movie.imdbID">
+      <img matListAvatar [src]="movie.poster" alt="movie.title"></a>
+    <a class="mat-h3" matLine [href]="'movies/'+ movie.imdbID"> {{movie.title}} </a>
     <div matLine>
       <span> </span>
       <span class="demo-2"> : {{movie.year}} </span>

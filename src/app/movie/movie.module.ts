@@ -5,9 +5,10 @@ import { MovieService } from './shared/movie.service';
 import { MovieMapperService } from './shared/movie-mapper.service';
 import { MaterialModule } from '../shared/material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MovieComponent } from './movie/movie.component';
 
 @NgModule({
-  declarations: [MovieListComponent],
+  declarations: [MovieListComponent, MovieComponent],
   imports: [CommonModule, MaterialModule, FormsModule, ReactiveFormsModule],
   exports: [],
   providers: [MovieService, MovieMapperService],
