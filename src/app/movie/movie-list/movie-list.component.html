@@ -1,1 +1,35 @@
-<p>movie-list works!</p>
+<h2>Movies</h2>
+<mat-list>
+  <mat-list-item *ngFor="let movie of movies$ | async">
+    <img matListAvatar [src]="movie.poster" alt="movie.title">
+    <h3 matLine> {{movie.title}} </h3>
+    <div matLine>
+      <span> </span>
+      <span class="demo-2"> : {{movie.year}} </span>
+    </div>
+    <div matLine>
+      <span> Released: </span>
+      <span class="demo-2"> : {{movie.released}} </span>
+    </div>
+    <div matLine>
+      <span> Genre: </span>
+      <span class="demo-2"> : {{movie.genre}} </span>
+    </div>
+    <div matLine>
+      <span> Language: </span>
+      <span class="demo-2"> : {{movie.language}} </span>
+    </div>
+    <div matLine>
+      <span> Country: </span>
+      <span class="demo-2"> : {{movie.country}} </span>
+    </div>
+    <div matLine>
+      <span> Imdb rating: </span>
+      <span class="demo-2"> : {{movie.imdbRating}} </span>
+    </div>
+    <div matLine>
+      <span> Plot: </span>
+      <span class="demo-2"> : {{movie.plot}} </span>
+    </div>
+  </mat-list-item>
+</mat-list>

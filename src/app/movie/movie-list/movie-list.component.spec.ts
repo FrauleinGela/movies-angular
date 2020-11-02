@@ -6,6 +6,7 @@ import { MovieService } from '../shared/movie.service';
 import { Observable, of } from 'rxjs';
 import { IMovie } from '../shared/movie';
 import { moviesMock } from '../shared/movie.mock';
+import { MaterialModule } from 'src/app/shared/material.module';
 
 describe('MovieListComponent', () => {
   let component: MovieListComponent;
@@ -18,7 +19,8 @@ describe('MovieListComponent', () => {
         mockProvider(MovieService, {
           getMovies: (): Observable<IMovie[]> => of(moviesMock)
         })
-      ]
+      ],
+      imports: [MaterialModule]
     })
       .compileComponents();
   });

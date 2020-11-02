@@ -12,6 +12,6 @@ export class MovieService {
     this.apiUrl = environment.apiUrl;
   }
   getMovies(): Observable<IMovie[]> {
-    return this.http.get(this.apiUrl).pipe(map((resp: any[]) => (this.movieMapperService.mapMovies(resp))));
+    return this.http.get(`${this.apiUrl}/movies`).pipe(map((resp: any[]) => (this.movieMapperService.mapMovies(resp))));
   }
 }
