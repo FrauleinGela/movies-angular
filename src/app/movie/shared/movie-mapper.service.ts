@@ -10,22 +10,22 @@ export class MovieMapperService {
   mapMovie(movie: any): IMovie {
     const mapped = <IMovie>{};
     mapped.title = movie.title;
-    mapped.Actors = movie.actors;
+    mapped.actors = movie.actors;
     mapped.year = movie.year;
-    mapped.Rated = movie.Rated;
-    mapped.Released = movie.Released;
-    mapped.Runtime = movie.Runtime;
-    mapped.Genre = movie.Genre;
-    mapped.Director = movie.Director;
-    mapped.Writer = movie.Writer;
-    mapped.Actors = movie.Actors;
-    mapped.Plot = movie.Plot;
-    mapped.Language = movie.Language;
-    mapped.Country = movie.Country;
-    mapped.Poster = movie.Poster;
-    mapped.Awards = movie.Awards;
-    mapped.ImdbRating = movie.ImdbRating;
-    mapped.ImdbID = movie.ImdbID;
+    mapped.rated = movie.rated;
+    mapped.released = movie.released;
+    mapped.runtime = movie.runtime;
+    mapped.genre = movie.genre;
+    mapped.director = movie.director;
+    mapped.writer = movie.writer;
+    mapped.actors = movie.actors;
+    mapped.plot = movie.plot;
+    mapped.language = movie.language;
+    mapped.country = movie.country;
+    mapped.poster = movie.poster;
+    mapped.awards = movie.awards;
+    mapped.imdbRating = movie.imdbRating;
+    mapped.imdbID = movie.imdbID;
     return mapped;
   }
 }

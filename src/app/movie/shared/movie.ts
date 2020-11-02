@@ -1,18 +1,18 @@
 export interface IMovie {
   title: string;
   year: string;
-  Rated: string;
-  Released: string;
-  Runtime: string;
-  Genre: string;
-  Director: string;
-  Writer: string;
-  Actors: string;
-  Plot: string;
-  Language: string;
-  Country: string;
-  Poster: string;
-  Awards: string;
-  ImdbRating: string;
-  ImdbID: string;
+  rated: string;
+  released: string;
+  runtime: string;
+  genre: string;
+  director: string;
+  writer: string;
+  actors: string;
+  plot: string;
+  language: string;
+  country: string;
+  poster: string;
+  awards: string;
+  imdbRating: string;
+  imdbID: string;
 }
