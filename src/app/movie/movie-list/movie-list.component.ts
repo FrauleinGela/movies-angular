@@ -16,9 +16,11 @@ export class MovieListComponent implements OnInit {
     'title': new FormControl(''),
     'country': new FormControl(''),
     'language': new FormControl(''),
+    'sortDirection': new FormControl('ASC')
   })
   public countries = countries;
   public languages = languages;
+
   constructor(private movieService: MovieService) { }
 
   ngOnInit(): void {

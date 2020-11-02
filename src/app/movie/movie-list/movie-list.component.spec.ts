@@ -34,6 +34,7 @@ describe('MovieListComponent', () => {
       'title': new FormControl(''),
       'country': new FormControl(''),
       'language': new FormControl(''),
+      'sortDirection': new FormControl('ASC')
     })
     fixture.detectChanges();
   });
