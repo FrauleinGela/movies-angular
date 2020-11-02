@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { environment } from '../../../environments/environment';
-import { IMovie, IMovieListParameters, IMovieParameters } from './movie';
+import { IMovie, IMovieListParameters } from './movie';
 import { MovieMapperService } from './movie-mapper.service';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -17,8 +17,8 @@ export class MovieService {
       .pipe(map((resp: any[]) => (this.movieMapperService.mapMovies(resp))));
   }
 
-  getMovie(parameters: IMovieParameters): Observable<IMovie> {
-    return this.http.get(`${this.apiUrl}/${parameters.imdbId}`)
+  getMovie(imdbId: string): Observable<IMovie> {
+    return this.http.get(`${this.apiUrl}/${imdbId}`)
       .pipe(map((resp: any) => (this.movieMapperService.mapMovie(resp))));
   }
 
