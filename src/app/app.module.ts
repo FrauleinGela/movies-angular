@@ -7,6 +7,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MovieModule } from './movie/movie.module';
 import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from './shared/material.module';
+import { AuthModule } from '@auth0/auth0-angular';
+import { environment } from '../environments/environment';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,11 @@ import { MaterialModule } from './shared/material.module';
     BrowserAnimationsModule,
     MovieModule,
     HttpClientModule,
-    MaterialModule
+    MaterialModule,
+    AuthModule.forRoot({
+      domain: environment.oAuth.domain,
+      clientId:environment.oAuth.clientId
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
