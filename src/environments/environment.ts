@@ -4,7 +4,11 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'https://localhost:5001'
+  apiUrl: 'https://localhost:5001',
+  oAuth: {
+    clientId: '2c20G8zOKaNmQtUEf46F6snxAY5Uh3lq',
+    domain: 'dev-bc41yqtx.eu.auth0.com'
+  }
 };
 
 /*
