@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+  <span>Movies</span>
+  <span class="spacer"></span>
+  <ng-container *ngIf="isAuthenticated$ | async; else logIn">
+    <span *ngIf="user$ | async as user">
+      {{user.email}}
+    </span>
+    <button mat-button (click)="logout()">
+      Logout
+    </button>
+  </ng-container>
+  <ng-template #logIn>
+    <button mat-button (click)="login()">
+      Login
+    </button>
+  </ng-template>
+  <span *ngIf="user$ | async as user">
+   d {{user.email}}
+  </span>
+</mat-toolbar>

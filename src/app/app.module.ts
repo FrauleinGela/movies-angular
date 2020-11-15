@@ -25,7 +25,8 @@ import { CoreModule } from './core/core.module';
     AuthModule.forRoot({
       domain: environment.oAuth.domain,
       clientId:environment.oAuth.clientId
-    })
+    }),
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
