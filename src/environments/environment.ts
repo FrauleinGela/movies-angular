@@ -1,13 +1,20 @@
+import { domain, clientId, audience, apiUri } from '../../auth-config.json';
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
   production: false,
-  apiUrl: 'https://localhost:5001',
+  apiUri: apiUri,
   oAuth: {
-    clientId: '2c20G8zOKaNmQtUEf46F6snxAY5Uh3lq',
-    domain: 'dev-bc41yqtx.eu.auth0.com'
+    clientId,
+    domain,
+    audience,
+  },
+  httpInterceptor: {
+    allowedList: [
+      `${apiUri}/*`
+    ]
   }
 };
 
