@@ -1,0 +1,6 @@
+{
+  "clientId": "YOUR_CLIENT_ID",
+  "domain": "YOUR_DOMAIN",
+  "audience": "YOUR_AUDIENCE_ID",
+  "apiUri": "YOUR_API"
+}
