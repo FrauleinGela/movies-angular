@@ -9,7 +9,7 @@ import { map } from 'rxjs/operators';
 export class MovieService {
   private readonly apiUrl: string;
   constructor(private movieMapperService: MovieMapperService, private http: HttpClient) {
-    this.apiUrl = `${environment.apiUrl}/movies`;
+    this.apiUrl = `${environment.apiUri}/movies`;
   }
   getMovies(parameters: IMovieListParameters): Observable<IMovie[]> {
     const httpParams = this.setHttpParams(parameters);
