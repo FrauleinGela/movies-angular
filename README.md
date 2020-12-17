@@ -1,13 +1,8 @@
 # AngularMovies
-This is a project to put in practice OAUTH Proof Key for Code Exchange (PKCE)
-At the same time, the applications displays a list of  movies filtered by title, location, country.
-A user is able to book a movie and unbook.
+* This is a project to put in practice OAUTH Proof Key for Code Exchange (PKCE)
+* At the same time, the applications displays a list of  movies filtered by title, location, country.
+* A user is able to book a movie and unbook.
 
-<br>
-<br>
-<br>
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
-This project works along with an API 
 ## Dependencies
 
 This project depends on the following API:  https://github.com/FrauleinGela/movies-api-csharp
@@ -17,6 +12,8 @@ This project depends on the following API:  https://github.com/FrauleinGela/movi
  * Check a movie if its booked by a user
 
 ## Prerequisites to run this project
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+This project works along with an API
  * Install Node.js(I recommend a LTS version) and npm, that are essential to Angular development.
  * Install @angular cli  `npm install -g @angular/cli` 
 Get it now if it's not already installed on your machine.
