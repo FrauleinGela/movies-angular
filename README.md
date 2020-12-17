@@ -1,5 +1,11 @@
 # AngularMovies
-This is a project to display a list of movies filtered by title, location, country.
+This is a project to put in practice OAUTH Proof Key for Code Exchange (PKCE)
+At the same time, the applications displays a list of  movies filtered by title, location, country.
+A user is able to book a movie and unbook.
+
+<br>
+<br>
+<br>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 This project works along with an API 
 ## Dependencies
@@ -9,14 +15,23 @@ This project depends on the following API:  https://github.com/FrauleinGela/movi
 ## TODO
  * Check a movie if its booked
  * Check a movie if its booked by a user
- * Add login = > If login succeeds then store the token in the local storage, a token that is returned from the Api created with a JwtSecurityToken)
 
-## Prerequisites
+## Prerequisites to run this project
  * Install Node.js(I recommend a LTS version) and npm, that are essential to Angular development.
- * Install @angular cli  `npm install -g @angular/cli`
-
+ * Install @angular cli  `npm install -g @angular/cli` 
 Get it now if it's not already installed on your machine.
 Verify that you are running at least node v4.x.x and npm 3.x.x by running node -v and npm -v in a terminal/console window. Older versions produce errors.
+
+## Prerequisites to use OAUTH Proof Key for Code Exchange (PKCE)
+ * Create a JSON file with the following structure. where the values should be the ones used in your OAuth account <br>
+`
+{
+  "clientId": "YOUR_CLIENT_ID",
+  "domain": "YOUR_DOMAIN",
+  "audience": "YOUR_AUDIENCE_ID",
+}
+`
+
 
 ## Steps to run the app
  1. Install npm packages found in the file package.json `npm install` (If not installed yet)
